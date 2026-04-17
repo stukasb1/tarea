@@ -128,16 +128,16 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem; /* Bordes redondeados para tarjetas */
-  overflow: hidden; /* Asegura que el contenido respete el border-radius */
+  overflow: hidden; /* Asegura que el contenido respete el border-radius 
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 25px -5px var(--hover-shadow-color); /* Sombra más grande en hover */
+  box-shadow: 0 20px 25px 
 }
 
 .card-body {
-  padding: 1.5rem; /* Más padding dentro del cuerpo de la tarjeta */
+  padding: 1.5rem;
 }
 
 .card-title {
@@ -153,10 +153,10 @@ section {
 
 
 .alert-success {
-  background-color: rgba(40, 167, 69, 0.1); /* Fondo más claro para la alerta */
-  color: var(--accent-green); /* Texto en verde de acento */
+  background-color: rgba(40, 167, 69, 0.1); 
+  color: var(--accent-green); 
   border-color: rgba(40, 167, 69, 0.2);
-  border-left: 5px solid var(--accent-green); /* Borde izquierdo de acento */
+  border-left: 5px solid var(--accent-green); 
   border-radius: 0.5rem;
   padding: 1.5rem;
 }
@@ -174,24 +174,24 @@ section {
 }
 
 .form-control:focus, .form-select:focus {
-  border-color: var(--primary-gold); /* Borde dorado en foco */
+  border-color: var(--primary-gold); 
   box-shadow: 0 0 0 0.25rem rgba(184, 134, 11, 0.25); /* Sombra de foco dorada */
 }
 
 
 .site-footer {
-  background-color: var(--dark-bg) !important; /* Fondo oscuro usando variable */
-  color: var(--light-text); /* Texto claro */
+  background-color: var(--dark-bg) !important; 
+  color: var(--light-text);
   padding: 2rem 0; /* Más padding */
-  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Borde superior sutil */
+  border-top: 1px solid rgba(255, 255, 255, 0.05); 
 }
 
 .site-footer a {
-  color: var(--secondary-gold); /* Enlaces en dorado */
+  color: var(--secondary-gold); 
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .site-footer a:hover {
-  color: var(--primary-gold); /* Dorado más oscuro en hover */
+  color: var(--primary-gold); 
 }

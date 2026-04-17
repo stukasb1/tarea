@@ -1,11 +1,185 @@
-.body {
-  background-color: #f0f0f0;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700;900&display=swap');
+
+:root {
+  --primary-gold: #b8860b;
+  --secondary-gold: #ffd700;
+  --dark-bg: #1a1a1a;
+  --light-bg: #f8f8f8;
+  --dark-text: #333333;
+  --light-text: #e0e0e0;
+  --accent-green: #28a745;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-.header {
-  color: #333;
+html {
+  scroll-behavior: smooth;
 }
 
-.footer {
-  font-size: 12px;
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-text);
+  line-height: 1.6;
+  background-color: var(--light-bg);
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  color: var(--dark-text);
+}
+
+.navbar {
+  background-color: rgba(26, 26, 26, 0.95) !important;
+  box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.navbar-brand {
+  color: var(--secondary-gold) !important;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  color: var(--light-text) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-gold) !important;
+}
+
+.resaltar {
+  border: 4px solid var(--primary-gold);
+  box-shadow: 0 10px 30px var(--hover-shadow-color);
+  transition: transform 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.resaltar:hover {
+  transform: scale(1.02);
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#inicio h1 {
+  color: var(--primary-gold);
+}
+
+#inicio p.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.badge.bg-warning {
+  background-color: var(--secondary-gold) !important;
+  color: var(--dark-text) !important;
+  padding: 0.5em 0.75em;
+  font-size: 0.9em;
+  border-radius: 0.25rem;
+}
+
+.seccion-oscura {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, #111827 100%);
+  color: var(--light-text);
+  border-radius: 0.75rem;
+  padding: 3rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.seccion-oscura h2 {
+  color: var(--secondary-gold);
+}
+
+.boton-personalizado {
+  background-color: var(--primary-gold);
+  color: var(--dark-text);
+  border: 2px solid var(--primary-gold);
+  box-shadow: 0 8px 16px rgba(184, 134, 11, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 0.3rem;
+}
+
+.boton-personalizado:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(184, 134, 11, 0.4);
+  background-color: var(--secondary-gold);
+  border-color: var(--secondary-gold);
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--dark-text);
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  color: var(--dark-text);
+}
+
+.alert-success {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--accent-green);
+  border-color: rgba(40, 167, 69, 0.2);
+  border-left: 5px solid var(--accent-green);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.form-label {
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.form-control, .form-select {
+  border-radius: 0.3rem;
+  border: 1px solid #ced4da;
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-gold);
+  box-shadow: 0 0 0 0.25rem rgba(184, 134, 11, 0.25);
+}
+
+.site-footer {
+  background-color: var(--dark-bg) !important;
+  color: var(--light-text);
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.site-footer a {
+  color: var(--secondary-gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: var(--primary-gold);
 }

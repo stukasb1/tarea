@@ -1,0 +1,199 @@
+/* Importación de tipografías elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700;900&display=swap');
+
+/* Importación de tipografías elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700;900&display=swap');
+
+/* Definición de variables CSS para una paleta de colores consistente y elegante */
+:root {
+  --primary-gold: #b8860b; /* Un dorado más oscuro y rico para acentos principales */
+  --secondary-gold: #ffd700; /* Un dorado más brillante para detalles y resaltados */
+  --dark-bg: #1a1a1a; /* Un fondo oscuro profundo para secciones y el footer */
+  --light-bg: #f8f8f8; /* Un fondo claro suave para el cuerpo principal */
+  --dark-text: #333333; /* Texto oscuro para una legibilidad óptima en fondos claros */
+  --light-text: #e0e0e0; /* Texto claro para contrastar en fondos oscuros */
+  --accent-green: #28a745; /* Un verde sutil para mensajes de éxito o elementos específicos */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Color base para sombras sutiles */
+  --hover-shadow-color: rgba(0, 0, 0, 0.2); /* Color para sombras en estado hover */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-text); /* Usar variable para el color del texto */
+  line-height: 1.6;
+  background-color: var(--light-bg); /* Fondo claro para el cuerpo */
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  color: var(--dark-text); /* Asegurar que los títulos usen el color de texto oscuro */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: rgba(26, 26, 26, 0.95) !important; /* Fondo oscuro ligeramente transparente */
+  box-shadow: 0 2px 10px var(--shadow-color); /* Sombra sutil para profundidad */
+}
+
+.navbar-brand {
+  color: var(--secondary-gold) !important; /* Marca en color dorado */
+  font-size: 1.8rem; /* Tamaño de fuente más grande para la marca */
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  color: var(--light-text) !important; /* Enlaces de navegación en texto claro */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-gold) !important; /* Cambio a dorado en hover */
+}
+
+/* Esta clase resalta la imagen principal con un borde suave y sombra para destacarla en la sección de inicio */
+.resaltar {
+  border: 4px solid var(--primary-gold); /* Borde dorado usando variable */
+  box-shadow: 0 10px 30px var(--hover-shadow-color); /* Sombra más pronunciada */
+  transition: transform 0.3s ease;
+  border-radius: 0.5rem; /* Bordes ligeramente redondeados */
+}
+
+.resaltar:hover {
+  transform: scale(1.02);
+}
+
+/* Estilos generales para secciones */
+section {
+  padding-top: 5rem; /* Espaciado superior para secciones */
+  padding-bottom: 5rem; /* Espaciado inferior para secciones */
+}
+
+/* Estilos específicos para la sección de inicio */
+#inicio h1 {
+  color: var(--primary-gold); /* Título principal en dorado */
+}
+
+#inicio p.lead {
+  font-size: 1.25rem; /* Tamaño de fuente más grande para el párrafo principal */
+  font-weight: 400;
+}
+
+/* Estilos para el badge de advertencia */
+.badge.bg-warning {
+  background-color: var(--secondary-gold) !important; /* Fondo dorado para el badge */
+  color: var(--dark-text) !important; /* Texto oscuro para el badge */
+  padding: 0.5em 0.75em;
+  font-size: 0.9em;
+  border-radius: 0.25rem;
+}
+
+/* Esta clase estiliza secciones específicas con un fondo oscuro y texto claro para diferenciarlas visualmente */
+.seccion-oscura {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, #111827 100%); /* Fondo oscuro con gradiente */
+  color: var(--light-text); /* Texto claro para fondos oscuros */
+  border-radius: 0.75rem;
+  padding: 3rem 1.5rem; /* Más padding vertical */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.seccion-oscura h2 {
+  color: var(--secondary-gold); /* Títulos en secciones oscuras en dorado */
+}
+
+/* Esta clase personaliza botones importantes con un borde y sombra suave para que se vean distintos de los botones Bootstrap por defecto */
+.boton-personalizado {
+  background-color: var(--primary-gold); /* Fondo dorado */
+  color: var(--dark-text); /* Texto oscuro */
+  border: 2px solid var(--primary-gold); /* Borde dorado */
+  box-shadow: 0 8px 16px rgba(184, 134, 11, 0.3); /* Sombra que coincide con el dorado */
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 0.3rem; /* Botones ligeramente redondeados */
+}
+
+.boton-personalizado:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(184, 134, 11, 0.4); /* Sombra mejorada en hover */
+  background-color: var(--secondary-gold); /* Dorado más claro en hover */
+  border-color: var(--secondary-gold);
+}
+
+/* Estilización de tarjetas para que se sientan modernas */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem; /* Bordes redondeados para tarjetas */
+  overflow: hidden; /* Asegura que el contenido respete el border-radius */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px var(--hover-shadow-color); /* Sombra más grande en hover */
+}
+
+.card-body {
+  padding: 1.5rem; /* Más padding dentro del cuerpo de la tarjeta */
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--dark-text);
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  color: var(--dark-text);
+}
+
+/* Estilos para alertas de éxito */
+.alert-success {
+  background-color: rgba(40, 167, 69, 0.1); /* Fondo más claro para la alerta */
+  color: var(--accent-green); /* Texto en verde de acento */
+  border-color: rgba(40, 167, 69, 0.2);
+  border-left: 5px solid var(--accent-green); /* Borde izquierdo de acento */
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+/* Estilos para elementos de formulario */
+.form-label {
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.form-control, .form-select {
+  border-radius: 0.3rem;
+  border: 1px solid #ced4da;
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-gold); /* Borde dorado en foco */
+  box-shadow: 0 0 0 0.25rem rgba(184, 134, 11, 0.25); /* Sombra de foco dorada */
+}
+
+/* Estilos para el pie de página */
+.site-footer {
+  background-color: var(--dark-bg) !important; /* Fondo oscuro usando variable */
+  color: var(--light-text); /* Texto claro */
+  padding: 2rem 0; /* Más padding */
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Borde superior sutil */
+}
+
+.site-footer a {
+  color: var(--secondary-gold); /* Enlaces en dorado */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: var(--primary-gold); /* Dorado más oscuro en hover */
+}
